@@ -46,7 +46,7 @@ struct CarouselView: View {
         .scrollPosition($position)
         .scrollTargetBehavior(.paging)
         .onScrollTargetVisibilityChange(idType: Color.self) { visibleColors  in
-            self.selectedColor = visibleColors.first
+            selectedColor = visibleColors.first
         }
     }
 }
